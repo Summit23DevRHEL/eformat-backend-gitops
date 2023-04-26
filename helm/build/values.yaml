@@ -1,0 +1,15 @@
+app:
+  name: poi-backend-app
+  namespace: eformat
+  cluster: .apps.summit23-dr.w6gk.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23DevRHEL/eformat-backend
+  org: Summit23DevRHEL
+  name: eformat-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: eformat/poi-backend-app
+  tag: latest
